@@ -9,7 +9,7 @@
 # 发现 bug 咋反馈？  
 如果玩的时候碰到问题（比如闪退、功能异常 ），直接点 GitHub 仓库顶部的 **Issues** → 新建 Issue 描述清楚问题，作者会看哒～ 
 
-## 如何运行游戏？  
+# 如何运行游戏？  
 1. 安装 Python：去 [官网](https://www.python.org/downloads/) 下载并安装（记得勾选 Add to PATH）。  
-2. 装依赖：打开命令行，输入 `pip install pygame`（如果游戏用了其他库，替换成对应名称）。  
-3. 运行：下载 `.py` 文件后，在文件所在文件夹的命令行里输入 `python 文件名.py` 即可。  
+2. 装依赖：打开命令行，输入 `pip install pygame`。  
+3. 双击下载的.py文件即可游玩了。 
