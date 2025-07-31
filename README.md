@@ -12,4 +12,5 @@
 # 如何运行游戏？  
 1. 安装 Python：去 [官网](https://www.python.org/downloads/) 下载并安装（记得勾选 Add to PATH）。  
 2. 装依赖：打开命令行，输入 `pip install pygame`。  
-3. 双击下载的.py文件即可游玩了。 
+3. 进入我的仓库后，点击绿色按键，在最底下有一个download，点击它下载压缩包到电脑桌面右击解压即可获得全部文件。
+4. 双击下载的.py文件即可游玩了。 
