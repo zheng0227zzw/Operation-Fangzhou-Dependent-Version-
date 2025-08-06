@@ -985,10 +985,10 @@ class Game:
             menu_bg.fill((20, 20, 40))
             screen.blit(menu_bg, (0, 0))
             
-            title = large_font.render("方块洲行动", True, COLORS["white"])
+            title = large_font.render("方块洲行动（内测版）", True, COLORS["white"])
             subtitle = font.render("代号: DRO", True, (200, 50, 50))
             
-            coins_text = large_font.render(f"哈弗币: ¥{self.havoc_coins:,}", True, COLORS["money"])
+            coins_text = large_font.render(f"方块币: ¥{self.havoc_coins:,}", True, COLORS["money"])
             
             screen.blit(title, (screen_width//2 - title.get_width()//2, screen_height//3))
             screen.blit(subtitle, (screen_width//2 - subtitle.get_width()//2, screen_height//3 + 60))
@@ -1044,7 +1044,7 @@ class Game:
             ui_panel.fill((0, 0, 0, 150))
             screen.blit(ui_panel, (0, 0))
             
-            health_text = font.render(f"生命: {self.player.health}/{self.player.max_health}", True, COLORS["white"])
+            health_text = font.render(f"血量: {self.player.health}/{self.player.max_health}", True, COLORS["white"])
             pygame.draw.rect(screen, (50, 50, 50), (120, 30, 200, 20))
             pygame.draw.rect(screen, COLORS["health"], 
                            (120, 30, 200 * (self.player.health / self.player.max_health), 20))
