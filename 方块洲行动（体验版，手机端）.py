@@ -22,7 +22,7 @@ screen_width, screen_height = info.current_w, info.current_h
 # 为了开发方便，可以注释掉下面一行，使用窗口模式
 # screen = pygame.display.set_mode((1280, 720))
 screen = pygame.display.set_mode((screen_width, screen_height), pygame.FULLSCREEN)
-pygame.display.set_caption("三角洲行动-手机版")
+pygame.display.set_caption("方块洲行动")
 clock = pygame.time.Clock()
 
 # 保存文件路径
@@ -985,8 +985,8 @@ class Game:
             menu_bg.fill((20, 20, 40))
             screen.blit(menu_bg, (0, 0))
             
-            title = large_font.render("三角洲行动-手机版", True, COLORS["white"])
-            subtitle = font.render("代号: 珍宝猎人", True, (200, 50, 50))
+            title = large_font.render("方块洲行动", True, COLORS["white"])
+            subtitle = font.render("代号: DRO", True, (200, 50, 50))
             
             coins_text = large_font.render(f"哈弗币: ¥{self.havoc_coins:,}", True, COLORS["money"])
             
@@ -995,7 +995,7 @@ class Game:
             screen.blit(coins_text, (screen_width//2 - coins_text.get_width()//2, screen_height//2 + 180))
             
             # 绘制触摸提示
-            touch_text = font.render("双击屏幕开始游戏", True, COLORS["green"])
+            touch_text = font.render("点击屏幕开始游戏", True, COLORS["green"])
             screen.blit(touch_text, (screen_width//2 - touch_text.get_width()//2, screen_height - 150))
         
         elif self.state in [GameState.PLAYING, GameState.EXTRACTING]:
